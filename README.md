@@ -3,9 +3,23 @@
 **A curated collection of official and community-built Claude Skills.**  
 Anthropic Skills are modular tools that extend the capabilities of Claude AI—unlocking workflows for coding, document creation, design, data analysis, research, and more.
 
-This repository gathers and organizes all publicly available Claude Skills, including both built-in tools by Anthropic and creative contributions from the community. Browse by category, explore capabilities, and kickstart your own Skill creation.
+This directory links to a selection of official and community Claude Skills. Browse by category and follow the original sources; inclusion is not a claim of completeness, compatibility, endorsement, or local implementation.
 
-> 💡 **Note**: Skills require Claude Pro, Max, Team, or Enterprise access with code execution enabled.
+## Provenance and scope
+
+This is a reference fork of [Abu Bakar Siddik's Claude Skills Collection](https://github.com/abubakarsiddik31/claude-skills-collection), not a JD-authored skills implementation. The inherited directory at [baseline `057cd206f48203e5702c0f990803a152f46cbe56`](https://github.com/JDKristenson/claude-skills-collection/tree/057cd206f48203e5702c0f990803a152f46cbe56) contains only this README. Its six reachable commits credit Abu Bakar Siddik and Armand du Plessis; linked skills remain the work of their respective authors and communities. Commit authors alone do not establish the full set of contributors or rule out work elsewhere.
+
+The fork-local addition here is documentation: provenance, safe browsing/setup guidance, and a source-derived workflow map, prepared with Reason AI assistance. It does not establish original skill development or upstream contribution by JD. The inherited directory entries and source credits are retained below.
+
+> Requirements and loading methods vary by client and skill and can change. Check the current documentation for your intended Claude client and the selected skill; this directory does not verify account-plan eligibility or installation compatibility.
+
+### Editable provenance and browsing map
+
+![Provenance and browsing workflow](docs/provenance.svg)
+
+[Editable Excalidraw source](docs/provenance.excalidraw) · [SVG preview](docs/provenance.svg)
+
+Open the `.excalidraw` file in a compatible Excalidraw editor (no external skills need installing). Boxes and arrows are editable, not a flattened image. The SVG is a matching static preview; when editing, update both files together. The map describes directory provenance and a recommended review workflow, not a running integration or evidence that any linked skill has been executed.
 
 ---
 
@@ -43,6 +57,10 @@ Skills allow Claude to:
 Official Skills are created by Anthropic and auto-invoked when needed. You can also install or build custom skills to meet your unique workflow needs.
 
 ---
+
+## Categories
+
+The entries below are inherited references, not locally bundled or verified skills.
 
 ## 📄 Document Skills
 
@@ -184,11 +202,18 @@ Official Skills are created by Anthropic and auto-invoked when needed. You can a
 
 ## Getting Started
 
-To use a skill:
-1. Clone the [Anthropic Claude Skills](https://github.com/anthropics/skills) repo.
-2. Enable Code Execution and Skill loading in Claude.
-3. Upload the skill folder (or link to a Git repo with an `SKILL.md`).
-4. Ask Claude to activate or use the skill!
+### Browse this repository
+
+Read this README on GitHub or in a text editor. No dependency installation, credentials, environment variables, build step, or service is needed to browse it. This is a documentation directory: there is no local skill package, application, manifest, build system, or test suite. No native setup/build/test command is defined; do not infer that cloning this repository installs skills.
+
+### Evaluate an external skill separately
+
+1. Follow the selected entry's original source link. Links and descriptions are inherited references and may move or become outdated.
+2. Read that source's current instructions, `SKILL.md` (if present), scripts, dependencies, permissions, license, attribution, and nested notices before use. Preserve applicable human, community, and AI credits.
+3. Check the current loading/install procedure for your intended Claude client. Do not assume a repository URL or folder can be loaded by every client.
+4. Only after review, follow that source's supported setup in an appropriate isolated environment, using non-sensitive sample data and least privilege. Never paste real credentials or private data into examples, diagrams, or issues.
+
+This documentation change did not install or execute linked skills, validate credentials, or verify external links, licenses, compatibility, or behavior.
 
 ---
 
@@ -208,5 +233,7 @@ Open a pull request or submit your repo link in an issue with:
 
 This repo lists and links to skills under various licenses.  
 Please refer to each linked repository for license terms.
+
+No standalone license file is present in the inherited baseline. The statement above describes the linked works; it does not grant a new license to this directory text or its documentation additions. Do not assume upstream or third-party rights can be relicensed here. Preserve applicable notices and attribution, including notices nested in any separately obtained skill.
 
 ---
